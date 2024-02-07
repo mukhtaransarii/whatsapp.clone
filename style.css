@@ -1,0 +1,330 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Sans-Serif;
+}
+body{
+	position: relative;
+	height: 100vh;
+	background-color: red;
+}
+/*TOP BAAR PROFILE SETTING APP NAME  #####################################*/
+.topBar{
+  height: 6%;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 0.5px grey;
+}
+.topBar h1{
+  margin-left: 10px;
+  font-size: 24px;
+  color: #1DAA61;
+}
+.logo{
+  font-size: 20px;
+  margin-right: 10px;
+}
+.logo i{
+  margin-left: 20px;
+}
+
+/*NAV BAAR CHAT STORY CALL  ##############################################*/
+.navButtons{
+	background-color: white;
+	box-shadow: -2px 2px 10px 0px #0000003c;
+	height: 60px;
+	width: 300px;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  padding: 0px 40px;
+  font-size: 20px;
+  position: absolute;
+  z-index: 999;
+  color: #1DAA61;
+}
+.navButtons i:hover{
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+  text-decoration-thickness: 3px;
+}
+.contact{
+  height: 60px;
+  width: 380px;
+  z-index: 999;
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+ display: flex;
+ justify-content: flex-end;
+  }
+  .contact .morechat{
+    height: 100%;
+    width: 80px;
+    background-color: white;
+    box-shadow: -2px 2px 10px 0px #0000003c;
+    border-radius: 100px;
+    color: #1DAA61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+/*CHAT SCREEN ######################################################## */
+.chatScreen{ 
+	  width: 100vw;
+	  height: 94%;
+	  background-color: white;
+	  position: absolute;
+	  bottom: 0;
+	  white-space: nowrap;
+	  overflow-y: auto;
+	 }
+	 .chatScreen ul li img{
+	   width: 50px;
+	   border-radius: 50%;
+	   margin: 0 10px;
+	 }
+	 
+	 .chatScreen ul li{
+	   height: 75px;
+	   display: flex;
+	   align-items: center;
+	   position: relative;
+	   }
+	   .chatName h3{
+	     margin-bottom: 6px;
+	     font-weight: 500;
+	     display: flex;
+	     align-items: center;
+	     
+	     font-size: 15px;
+	   }
+	   .chatScreen h3 img{
+	     width: 20px;
+	     border-radius: 50%;
+	     margin-left: 5px;
+	   }
+	   .chatName #msg{
+	     color: grey;
+	   }
+	   #chattime{
+	     font-size: 13px;
+	     color: grey;
+	     position: absolute;
+	     right: 20px;
+	     top: 50%;
+	     transform: translateY(-50%);
+	   }
+
+     
+     .chatScreen .popup{
+      width: 100%;
+      height: 1000rem;
+      background-color: #0000005c;
+      position: absolute;
+      top: 0;
+      display: none;
+      z-index: 9999;
+      
+     }
+     #chattime{
+	     font-size: 13px;
+	     color: grey;
+	     position: absolute;
+	     right: 20px;
+	     top: 50%;
+	     transform: translateY(-50%);
+	   }
+   
+     .popup .pbg img{
+       width: 300px;
+       height: 300px;
+       border-radius: 20px;
+       margin-top: 100px;
+       margin-bottom: 10px;
+      }
+      .popupimg{
+        background-color: white;
+        height: 300px;
+        width: 300px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center;
+      }
+      .namebg{
+        width: 300px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: white;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        
+      }
+      .namebg h2{
+        margin-left: 20px;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      .infobg{
+        width: 300px;
+        height: 40px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        
+      }
+      .infobg div{
+        background-color: white;
+        height: 40px;
+        width: 67.5px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1DAA61;
+      }
+      .pbg{
+        height: 400px;
+        width: 300px;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+      }
+      
+      
+/* STORY SCREEN  ######################################################## */	   
+.storyScreen{
+	 width: 100vw;
+	 height: 94%;
+	 background-color: white;
+	 position: absolute;
+	 bottom: 0;
+	 display: none;
+	 white-space: nowrap;
+	 overflow-y: auto;
+  }
+  .storyScreen #chatdp{
+	   width: 50px;
+	   border-radius: 50%;
+	   margin: 0 10px;
+	 }
+	 	 .storyScreen ul li{
+	   height: 75px;
+	   display: flex;
+	   align-items: center;
+	   position: relative;
+	   }
+	   .storyScreen h3{
+	     margin-bottom: 6px;
+	     font-weight: 500;
+	   }
+	   .storyScreen #msg{
+	     color: grey;
+	   }
+     .statusname h1{
+       font-size: 25px;
+       padding: 10px;
+       font-weight: 500;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+     }
+     
+     .storyScreen ul li .fa-circle-plus{
+       width: 20px;
+       height: 20px;
+       color: #1DAA61;
+       font-size: 25px;
+       position: absolute;
+       bottom: 10px;
+       left: 40px;
+       background-color: white;
+       border-radius: 50%;
+     }
+     
+     .strbrd{
+       width: 60px;
+       height: 60px;
+       margin: 7.5px 10px;
+       border-radius: 50%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       background:
+     	radial-gradient(rgba(0,0,0,6.15) 59%, transparent 0), 
+     	radial-gradient(white 63%, transparent 0),
+      linear-gradient(to top right, #1DAA61 , #1DAA61);
+     }
+     #strbrd-tag{
+       margin: 10px 10px;
+       color: grey;
+       font-size: 15px;
+       font-weight: 500;
+     }
+/*CHAT SCREEN  ########################################################*/	 
+.callScreen{
+ 	width: 100vw;
+	 height: 94%;
+	 background-color: white;
+	 position: absolute;
+	 bottom: 0;
+	 display: none;
+	 white-space: nowrap;
+	 overflow-y: auto;
+}
+.callScreen #chatdp{
+	   width: 50px;
+	   border-radius: 50%;
+	   margin: 0 10px;
+	 }
+	 
+	 	 .callScreen ul li{
+	   height: 75px;
+	   display: flex;
+	   align-items: center;
+	   position: relative;
+	   }
+	  .callScreen .chatName h3{
+	     margin-bottom: 0px;
+	     font-weight: 500;
+	     display: flex;
+	     align-items: center;
+	   }
+	   .callScreen h3 img{
+	     width: 20px;
+	     border-radius: 50%;
+	     margin-left: 5px;
+	   }
+	   .calltName #msg{
+	     color: grey;
+	   }
+
+	   
+	 
+  .callScreen .fa-phone-volume{
+    color: red;
+    position: absolute;
+    right: 20px;
+  }
+  
+    .callScreen .green{
+    color: #1DAA61;
+    position: absolute;
+    right: 20px;
+  }
